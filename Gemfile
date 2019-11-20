@@ -17,6 +17,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'semantic-ui-sass'
 #import j-query
 gem 'jquery-rails'
+#devise
+gem 'devise'
+gem 'devise-semantified'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
