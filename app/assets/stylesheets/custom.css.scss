@@ -1,5 +1,10 @@
 @import "semantic-ui";
 
+.brand-name{
+    font-family: 'Fredoka One' !important;
+    font-size: 20px;
+}
+
 #welcome{
     background-image: asset-url('background2.png');
     background-size: cover;
