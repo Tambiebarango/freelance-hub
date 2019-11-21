@@ -11,10 +11,55 @@
             <%= devise_error_messages! %>
           </div>
 
-
           <div class="field ">
-            <%= f.label :email %>
-            <%= f.email_field :email, autofocus: true ,placeholder: "john@example.com"%>
+            <%= f.label :full_name %>
+            <%= f.text_field :full_name, autofocus: true ,placeholder: "John Doe"%>
+          </div>
+          
+          <div class="field">
+            <div class="ui grid">
+              <div class="eight wide column left-padding">
+                <div class="field">
+                  <%= f.label :username %>
+                  <%= f.text_field :username, autofocus: true, placeholder: "JDoe2019"%>
+                </div>
+              </div>
+
+              <div class="eight wide column left-padding">
+                <div class="field ">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, autofocus: true ,placeholder: "john@example.com"%>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field">
+            <%= f.label :street_name %>
+            <%= f.text_field :address, class: 'form-control' %>          
+          </div>
+
+          <div class="field">
+            <div class="ui grid">
+              <div class="five wide column left-padding">
+                <div class="field">
+                  <%= f.label :city %>
+                  <%= f.text_field :city, class: 'form-control', placeholder: "e.g. Ottawa" %>
+                </div>
+              </div>
+              <div class="five wide column left-padding">
+                <div class="field">
+                  <%= f.label :province %>
+                  <%= f.text_field :province, class: 'form-control', placeholder: "e.g. Ontario" %>
+                </div>
+              </div>
+              <div class="five wide column left-padding">
+                <div class="field">
+                  <%= f.label :country %>
+                  <%= f.text_field :country, class: 'form-control', placeholder: "e.g. Canada" %>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="field ">
